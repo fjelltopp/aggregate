@@ -77,8 +77,8 @@ public class BackendActionsTable extends CommonFieldsBase {
    * onward). 30 seconds.
    */
   public static final long FAST_PUBLISHING_RETRY_MILLISECONDS = 30L * 1000L;
-  /** delay between watchdog sweeps when there are no active tasks. 15 minutes. */
-  public static final long IDLING_WATCHDOG_RETRY_INTERVAL_MILLISECONDS = 15L * 60000L;
+  /** delay between watchdog sweeps when there are no active tasks. 1 minute. */
+  public static final long IDLING_WATCHDOG_RETRY_INTERVAL_MILLISECONDS = 60L * 1000L;
 
   // fields used to determine triggering of UploadSubmissions task creation.
   /** last time we reloaded the publisher hashMap from the datastore */
