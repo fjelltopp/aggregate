@@ -73,7 +73,7 @@ public class UploadSubmissionsWorkerImpl {
   // combination of multiple repeat groups within a submission and
   // the slowness of submissions on a bad day, this brings the fetch
   // limit down to about 10 records (for a 60-second request time-out).
-  private static final int MAX_FOREGROUND_QUERY_LIMIT = 10;
+  private static final int MAX_FOREGROUND_QUERY_LIMIT = 200;
   private static final int DELAY_BETWEEN_RELEASE_RETRIES = 1000;
   private static final int MAX_NUMBER_OF_RELEASE_RETRIES = 10;
 
